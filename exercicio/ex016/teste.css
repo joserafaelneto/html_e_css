@@ -1,0 +1,17 @@
+@charset "UTF-8"; /*Esse style foi somente um exercício*/
+body{
+    background-image: linear-gradient(to bottom,#016438,#DBE7DE,#016438);
+    background-attachment: fixed;
+}
+h1{
+    color: #ffffff;
+}
+h2{
+    color: #ffffff;
+}
+p{
+    color: #ffffff;
+}
+ul{
+    color: #ffffff;
+}
