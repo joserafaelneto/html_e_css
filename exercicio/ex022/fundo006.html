@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body{
             height: 100vh;
@@ -13,6 +13,16 @@
             background-position: center center;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed;
+
+            /*Shorthand - Background
+            A ordem da shorthand do background é a seguite:
+            background: color > image > position > repeat > [size] > attachment*/
+
+            /* Se observarmos, o "SIZE" teve de ser retirado da shorthand, e teve de ser usado um "background-size" para poder funcionar.
+            
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;*/
         }
         main{
             background-color: white;
@@ -29,6 +39,8 @@
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam perspiciatis officia quidem cum autem voluptatem dolor qui, laboriosam ullam, facere ex molestiae tenetur consectetur recusandae assumenda? Iusto expedita dolore reiciendis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias, minima atque distinctio rem at reiciendis ratione sunt in asperiores pariatur exercitationem repellat dolores nam nulla voluptas consectetur ipsam deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias, minima atque distinctio rem at reiciendis ratione sunt in asperiores pariatur exercitationem repellat dolores nam nulla voluptas consectetur ipsam deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias, minima atque distinctio rem at reiciendis ratione sunt in asperiores pariatur exercitationem repellat dolores nam nulla voluptas consectetur ipsam deleniti!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias, minima atque distinctio rem at reiciendis ratione sunt in asperiores pariatur exercitationem repellat dolores nam nulla voluptas consectetur ipsam deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus alias, minima atque distinctio rem at reiciendis ratione sunt in asperiores pariatur exercitationem repellat dolores nam nulla voluptas consectetur ipsam deleniti!</p>
     </main>
 </body>
 </html>
