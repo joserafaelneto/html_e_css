@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: white;
+    --cor2: black;
+    --cor3: darkblue;
+    --cor4:rgba(128, 128, 128, 0.577);
+    --cor5:rgb(39, 39, 209);
+    --cor6:rgba(255, 255, 255, 0.388);
+    --cor7:rgba(0, 0, 139, 0.374);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3), black);
+    padding: 10px;
+    max-height: 350px;
+    min-height: 200px;
+}
+h1.header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.header{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.header{
+    color: var(--cor1);
+}
+.link{
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: none;
+}
+main{
+    background-color: var(--cor2);
+    background-image: url('imagens/espaco.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div{
+    background-image: url('imagens/astronauta.png');
+    background-position: left bottom;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+article{
+    /*background-image: url('imagens/astronauta.png');*/
+    margin: auto;
+    max-width: 750px;
+    min-width: 300px;
+    color: var(--cor1);
+    padding: 10px;
+    background-color: var(--cor4);
+}
+h1.article{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin: 10px 0px 25px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--cor1);
+    background-color: var(--cor7);
+    /*background-image: linear-gradient(to right, var(--cor3), transparent);*/
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px 25px 0px;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--cor3);
+    background-color: var(--cor6);
+    /*background-image: linear-gradient(to right, var(--cor1), transparent);*/
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 10px 0px 25px 0px;
+    background-color: var(--cor6);
+    padding: 5px;
+    color: var(--cor5);
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+ul{
+    margin: 10px;
+}
+li{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-position: inside;
+}
+footer{
+    background-image: linear-gradient(to bottom,  var(--cor2), var(--cor3), black);
+    min-height: 100px;
+    max-height: 200px;
+    color: var(--cor1);
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.rodape{
+    text-align: center;
+    margin: 15px;
+}
+/*
+Falta configurar o footer
+*/
+
+
