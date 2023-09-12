@@ -35,9 +35,11 @@ h2#apagar{
 }
 
 body{
-    background-color: lightgray;
+    background-image: url('imagens/espaco.jpg');
+    background-size: cover;
     text-align: justify;
- 
+    font-family: var(--fonte-4);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.264);
 }
 
 header{
@@ -45,7 +47,8 @@ header{
     color: white;
     max-height: 450px;
     min-height: 350px;
-    width: 100vw;
+    /*width: 98.9vw;*//*Essa parte está dando erro*/
+    padding: 5px;
 }
 header > h1{
     font-family: var(--fonte-1);
@@ -53,6 +56,7 @@ header > h1{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 30px;
+    
 }
 header > p{
     font-family: var(--fonte-4);
@@ -69,6 +73,57 @@ a{
 a:hover{
     text-decoration: underline;
     font-size: 1.2em;
+}
+main{
+    background-image: url('imagens/astronauta.png');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-attachment: fixed;
+    background-position: right bottom;
+}
+article{
+    background-color: rgba(128, 128, 128, 0.47);
+    padding: 8px;   
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
+article > h1{
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+}
+
+article > h2{
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.373);
+    color: rgb(14, 14, 88);
+    border-radius: 4px;
+}
+
+article > h3{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.373);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: rgb(53, 53, 165);
+    border-radius: 4px;
+}
+
+article > p{
+    padding: 5px;
+    text-indent: 8px;
+    line-height: 1.5em;
+    color: white;
+}
+
+ul > li{
+    padding: 5px;
+    list-style-position: inside;
+    color: white;
 }
 
 
