@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        tr td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            <!-- <td>C</td> Removi a célula da letra C da tabela-->
+        </tr>
+
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+
+        <tr>
+           <!-- <td>G</td> Removi a célula da letra G da tabela-->
+            <td>H</td>
+           <!-- <td>I</td> Removi a célula da letra I da tabela-->
+        </tr>
+
+        <tr>
+            <!-- <td>J</td> Removi a célula da letra J da tabela-->
+            <!-- <td>K</td> Removi a célula da letra K da tabela-->
+            <td colspan="2">L</td>
+        </tr>
+    </table>
+
+</body>
+</html>
