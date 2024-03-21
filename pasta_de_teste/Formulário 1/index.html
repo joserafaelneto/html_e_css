@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/global.css">
+    <link rel="stylesheet" href="estilos/celular.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastre-se</h1>
+        <form action="cadstro.php" method="get" autocomplete="on">
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" required minlength="5" maxlength="30" autocomplete="name">
+            </div>
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input type="email" name="email" id="email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="site">Website:</label><br>
+                <input type="url" name="site" id="site">
+            </div>
+        
+            <div>
+                <label for="texto">Comentário:</label><br>
+                <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            </div>
+            <p>Observação: Seu comentário será publicado após passar pelo moderador</p>
+            <div>
+                <input type="submit" name="botao" id="botao" value="Enviar Comentário">
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

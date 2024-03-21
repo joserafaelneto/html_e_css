@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas tela: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+-------------------------------
+*/
+
+/* Mobile First */
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100vw;
+    }
+
+    main{
+        background-color: white;
+        width: 96vw;
+        padding: 10px;
+        
+    }
+
+    main > h1{
+        text-align: center;
+        margin: 20px;
+        margin-bottom: 40px;
+        background-color: lightgray;
+        border-radius: 2px;
+        padding: 10px;
+        
+    }
+
+    form{
+        width: 92vw;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 2px;
+    }
+
+    div{
+        margin: 10px;
+    }
+
+    label{
+        font-weight: bold;
+        margin: 0px 20px;
+    }
+
+    #nome, #email, #site{
+        width: 70vw;
+        height: 25px;
+        
+    }
+
+    #texto{
+        width: 70vw;
+    }
+    
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 20px 20px;
+    }
+
+    #botao{
+        padding: 5px 10px;
+        margin: 0px 20px;
+    }
+}
+
