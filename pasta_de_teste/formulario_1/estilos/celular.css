@@ -38,7 +38,6 @@ Grandes telas: acima de 1200px
         display: block;
         padding: 10px;
         text-align: center;
-        border: 1px solid black;
         border-radius: 2px;
     }
 
@@ -79,6 +78,23 @@ Grandes telas: acima de 1200px
         background-color: rgba(52, 52, 248, 0.5);
         color: white;
         border-style: none;
+    }
+
+    p#celular{
+        display: block;
+        font-weight: 100;
+        font-size: 10px;
+        text-align: right;
+        margin: 4px 0px;
+    }
+
+    p#tablet{
+        display: none;
+
+    }
+
+    p#desktop{
+        display: none;
     }
 }
 
