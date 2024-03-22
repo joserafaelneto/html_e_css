@@ -35,7 +35,7 @@ Grandes telas: acima de 1200px
     }
 
     form{
-        width: 92vw;
+        display: block;
         padding: 10px;
         text-align: center;
         border: 1px solid black;
@@ -43,22 +43,24 @@ Grandes telas: acima de 1200px
     }
 
     div{
-        margin: 10px;
+        padding: 10px;
     }
 
     label{
         font-weight: bold;
-        margin: 0px 20px;
+        margin: 10px 20px; 
+        
     }
 
     #nome, #email, #site{
         width: 70vw;
-        height: 25px;
-        
+        height: 27px;
+        margin: 2px 8px;
     }
 
     #texto{
         width: 70vw;
+        margin: 2px 8px;
     }
     
     p{
@@ -70,6 +72,13 @@ Grandes telas: acima de 1200px
     #botao{
         padding: 5px 10px;
         margin: 0px 20px;
+        background-color: lightgray;
+    }
+
+    #botao:hover{
+        background-color: rgba(52, 52, 248, 0.5);
+        color: white;
+        border-style: none;
     }
 }
 
