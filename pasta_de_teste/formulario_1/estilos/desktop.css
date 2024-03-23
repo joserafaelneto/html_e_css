@@ -10,12 +10,24 @@ Grandes telas: acima de 1200px
 -------------------------------
 */
 
-/* Tablet */
+/* Desktop */
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-
+@media screen and (min-width: 993px){
     main > h1{
-        background-color: lightgreen;
+        background-color: rgb(254, 64, 64);
+    }
+
+    form{
+        width: 60vw;
+        margin: auto;
+    }
+
+    #nome, #email, #site{
+        width: 50vw;
+    }
+
+    #texto{
+        width: 50vw;
     }
 
     p#celular{
@@ -23,6 +35,10 @@ Grandes telas: acima de 1200px
     }
 
     p#tablet{
+        display: none;
+    }
+
+    p#desktop{
         display: block;
         font-weight: 100;
         font-size: 10px;
@@ -30,8 +46,4 @@ Grandes telas: acima de 1200px
         margin: 4px 0px;
     }
 
-    p#desktop{
-        display: none;
-    }
-    
 }

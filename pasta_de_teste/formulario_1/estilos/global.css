@@ -8,6 +8,74 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    width: 100vw;
+    background-color: white;
+}
+
+main{
+    background-color: white;
+    padding: 10px;    
+}
+
+main > h1{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    padding: 10px;   
+}
+
+form{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+div{
+    padding: 10px;
+}
+
+label{
+    font-weight: bold;
+    margin: 10px 20px; 
+    
+}
+
+#nome, #email, #site{
+    width: 70vw;
+    height: 27px;
+    margin: 2px 8px;
+}
+
+#texto{
+    width: 70vw;
+    margin: 2px 8px;
+}
+
+p{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+
+#botao{
+    padding: 5px 10px;
+    margin: 0px 20px;
+    background-color: lightgray;
+}
+
+#botao:hover{
+    background-color: rgba(52, 52, 248, 0.5);
+    color: white;
+    border-style: none;
+}
+
+
+
+
 /* <style>
         *{
             margin: 0px;
