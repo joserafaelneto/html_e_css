@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eixos do Flexbox</title>
+    <style>
+
+        /*configurações para flex-direction: row;*/
+        div.container_1{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.item_1{
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /*configurações para flex-direction: row-reverse;*/
+        div.container_2{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.item_2{
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        /*configurações para flex-direction: column*/
+        div.container_3{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.item_3{
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /*configurações para flex-direction: column-reverse*/
+        div.container_4{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        div.item_4{
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Flex-direction: row</h2>
+    <div class="container_1">
+        <div class="item_1">A</div>
+        <div class="item_1">B</div>
+        <div class="item_1">C</div>
+        <div class="item_1">D</div>
+        <div class="item_1">E</div>
+    </div>
+
+    <h2>Flex-direction: row-reverse</h2>
+    <div class="container_2">
+        <div class="item_2">A</div>
+        <div class="item_2">B</div>
+        <div class="item_2">C</div>
+        <div class="item_2">D</div>
+        <div class="item_2">E</div>
+    </div>
+
+    <h2>Flex-direction: column</h2>
+    <div class="container_3">
+        <div class="item_3">A</div>
+        <div class="item_3">B</div>
+        <div class="item_3">C</div>
+        <div class="item_3">D</div>
+        <div class="item_3">E</div>
+    </div>
+
+    <h2>Flex-direction: colum-reverse</h2>
+    <div class="container_4">
+        <div class="item_4">A</div>
+        <div class="item_4">B</div>
+        <div class="item_4">C</div>
+        <div class="item_4">D</div>
+        <div class="item_4">E</div>
+    </div>
+</body>
+</html>
