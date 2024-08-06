@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 01 de Flexbox</title>
+    <style>
+        div.container{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            padding: 10px;
+            flex: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade flex-wrap</h1>
+    <p>Aqui estou estudando sobre a propriedade flex-wrap. A propriedade wrap sempre vai seguir o eixo transversal para a quebra de linha.</p>
+    <div class="container">
+        <div class="item">Exemplo de caixa A</div>
+        <div class="item">Exemplo de caixa B</div>
+        <div class="item">Exemplo de caixa C</div>
+        <div class="item">Exemplo de caixa D</div>
+        <div class="item">Exemplo de caixa E</div>
+        <div class="item">Exemplo de caixa F</div>
+        <div class="item">Exemplo de caixa G</div>
+    </div>
+</body>
+</html>
