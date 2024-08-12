@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 04 de Flexbox</title>
+    <style>
+        div.container{
+            background-color: lightblue;
+            display: flex;
+            height: 300px;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo o justify-content e o align-items</h1>
+    <p>OS valores aceitos pelo <strong>justify-content</strong>, que foram estudados nesta aula são:</p>
+    <ul>
+        <li>justify-content: flex-start;</li>
+        <li>justify-content: flex-end;</li>
+        <li>justify-content: center;</li>
+        <li>justify-content: space-between;</li>
+        <li>justify-content: space-evenly;</li>
+        <li>justify-content: space-around;</li>
+    </ul>
+    <p>Os valores aceitos pelo <strong>align-items</strong>, que foram estudados nesta aula são:</p>
+    <ul>
+        <li>align-items: stretch;</li>
+        <li>align-items: flex-start;</li>
+        <li>align-items: flex-end;</li>
+        <li>align-items: center;</li>
+    </ul>
+    <p>Lembrando que o <strong>justify-content</strong> "trabalha referente" ao main-axis (eixo principal), e o <strong>align-items</strong> "trabalha referente" ao cross-axis (eixo transversal).</p>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
