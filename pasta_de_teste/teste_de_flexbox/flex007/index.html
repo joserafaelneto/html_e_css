@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 01 de Flexbox</title>
+    <style>
+        div.container{
+            background-color: lightblue;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#item1{
+            order: -3;
+        }
+        div#item2{
+            order: -2;
+        }
+        div#item3{
+            order: 0;
+        }
+        div#item4{
+            order: -5;
+        }
+        div#item5{
+            order: -1;
+        }
+        div#item6{
+            order: 3;
+        }
+        div#item7{
+            order: 4;
+        }
+        div#item8{
+            order: -4;
+        }
+        div#item9{
+            order: 7;
+        }
+        div#item10{
+            order: 5;
+        }
+        div#item11{
+            order: 2;
+        }
+        div#item12{
+            order: 6;
+        }
+        div#item13{
+            order: 1;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">Terceiro = A</div>
+        <div class="item" id="item2">Quarto = B</div>
+        <div class="item" id="item3">Sexto = C</div>
+        <div class="item" id="item4">Primeiro = D</div>
+        <div class="item" id="item5">Quinto = E</div>
+        <div class="item" id="item6">Nono = F</div>
+        <div class="item" id="item7">Décimo = G</div>
+        <div class="item" id="item8">Segundo = H</div>
+        <div class="item" id="item9">Décimo terceiro = I</div>
+        <div class="item" id="item10">Décimo primeiro = J</div>
+        <div class="item" id="item11">Oitavo = K</div>
+        <div class="item" id="item12">Décimo segundo = L</div>
+        <div class="item" id="item13">Sétimo = M</div>
+    </div>
+
+    <h2>Gabaraito: order das letras</h2>
+    <p>D - H - A - B - E - C - M - K - F - G - J - L - I</p>
+</body>
+</html>
