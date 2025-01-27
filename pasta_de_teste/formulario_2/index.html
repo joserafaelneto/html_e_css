@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <main class="box">
+        <form action="" autocomplete="off">
+            <fieldset>
+                <h1>Cadastro de Desenvolvedores</h1>
+                <p id="subtitulo">Complete suas informações</p>
+
+                <!--campos de nome, email e telefone-->
+
+                <div class="User">
+                    <input type="text" name="nome" id="nome" class="InputUser" required>
+                    <label for="nome" class="dados_usuario">Nome completo</label>
+                </div>
+
+                <br>
+
+                <!--Prcisei trocar o tipo do input do email para text, pois, estava dando eero na animação-->
+                <div class="User">
+                    <input type="text" name="email" id="email" required class="InputUser">
+                    <label for="email" class="dados_usuario">Email</label>
+                </div>
+
+                <br>
+
+                <div class="User">
+                    <input type="tel" name="telefone" id="telefone" required class="InputUser">
+                    <label for="telefone" class="dados_usuario">Telefone</label>
+                </div>
+
+                <br>
+                <div class="radio">
+                    <!--input do tipo radio-->
+
+                    <label for="habilidade"><p>De qual lado da aplicação você desenvolve?</p></label>
+                    
+                        <div class="radio_opcoes">
+                            <input type="radio" name="habilidade" id="habilidade" value="front-end">
+                            <label for="front-end">Front-end</label>
+                        </div>
+                        <div class="radio_opcoes">
+                            <input type="radio" name="habilidade" id="habilidade" value="back-end">
+                            <label for="back-end">Back-end</label>
+                        </div>
+                        <div class="radio_opcoes">
+                            <input type="radio" name="habilidade" id="habilidade" value="back-end">
+                            <label for="fullstack">Fullstack</label>
+                        </div>
+                </div>
+
+                <div>
+                    <!--campo de senioridade-->
+                    <label for="experiencia"><p>Senioridade</p></label>
+                    <select name="selecione" id="selecione">
+                        <option value="selecione" selected disabled required>Selecione</option>
+                        <option value="junior">Junior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
+
+                <div class="tecnologias">
+                    <!--tecnologias utilizadas-->
+                    <p>Selecione as tecnologias que utiliza:</p>
+
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html" class="tecnologias">HTML</label>
+
+                    <input type="checkbox" name="css" id="css">
+                    <label for="css" class="tecnologias">CSS</label>
+
+                    <input type="checkbox" name="javascript" id="javascript">
+                    <label for="javascript" class="tecnologias">JavaScript</label>
+
+                    <input type="checkbox" name="php" id="php">
+                    <label for="php" class="tecnologias">PHP</label>
+
+                    <input type="checkbox" name="csharp" id="csharp">
+                    <label for="csharp" class="tecnologias">C#</label>
+
+                    <input type="checkbox" name="python" id="python">
+                    <label for="python" class="tecnologias">Python</label>
+
+                    <input type="checkbox" name="java" id="java">
+                    <label for="java" class="tecnologias">Java</label>
+                </div>
+
+                <!--botão-->
+                <div class="botao">
+                    <input type="submit" value="Concluído" class="botao">
+                <div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/*
+cores a serem uasdas:
+background-color: rgb(245, 245, 138);
+color: rgb(68, 40, 94);
+background-color: rgb(222, 248, 248);
+color: rgb(44, 11, 72);
+*/
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas tela: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+-------------------------------
+*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*rgb(68, 40, 94)
+rgb(44, 11, 72)
+background-color: lightgrey;*/
+
+body{ 
+    background-image: linear-gradient(to right, #44285e, #2c0b48);
+}
+
+main.box{
+    background-color: #ffffff00;
+    border: 1px solid black;
+    position: absolute;
+    width: 80vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 5px;
+    
+}
+
+fieldset{
+    padding: 10px;
+    border: 1px solid rgb(44, 11, 72);
+    border-radius: 5px;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(44, 11, 72);
+    padding: 10px 0px 5px 0px;
+}
+
+p{
+    color: rgb(68, 40, 94);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p#subtitulo{
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
+
+div.User{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input.InputUser{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(44, 11, 72);;
+    outline: none;
+    
+}
+
+label.dados_usuario{
+    position: absolute;
+    font-size: 15px;
+    top:  0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: rgb(68, 40, 94);
+}
+
+/* Essa parte do código faz a animação de deslocamento da Label*/
+.InputUser:focus ~ label.dados_usuario,
+.InputUser:valid ~ label.dados_usuario /*essa linha de código após a virgula, faz com que, após ser digitado o texto dentro do input, ao sair do input a label não "entra" em cima do texto que foi digitado, só vai voltar se o input estiver vazio*/{
+    top: -20px;
+    font-size: 10px;
+    color: rgb(44, 11, 72);
+    font-weight: bold; 
+}
+
+div.radio{
+    margin-bottom: 20px;
+}
+
+div.radio_opcoes{
+    line-height: 25px;
+    color: rgb(68, 40, 94);
+}
+
+select{
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(44, 11, 72);
+    outline: none;
+    border-radius: 3px;
+    color: rgb(68, 40, 94);
+    
+}
+
+.tecnologias{
+    margin-bottom: 20px;
+    padding: 0px 10px 0px 0px;
+    color: rgb(68, 40, 94);
+}
+
+
+div.botao{
+    text-align: center;
+    
+}
+
+input.botao{
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(44, 11, 72);
+    
+    color: #fff;
+}
+
+input.botao:hover{
+    background-color: rgb(68, 40, 94);
+    cursor: pointer;
+}
