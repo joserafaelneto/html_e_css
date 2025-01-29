@@ -12,126 +12,159 @@ Desktop: de 992px até 1200px
 Grandes telas: acima de 1200px
 --------------------------------*/ 
 
+
+/*Configuração Global */
 *{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-/*Lembre-se de voltar o min-width para 600px*/
-@media screen and (min-width: 500px) and (max-width:768px){
 
-    
+body{
+    background-image: linear-gradient(to right, #44285e, #2c0b48);
+   
+}
 
-    body{
-        background-image: linear-gradient(to right, #44285e, #2c0b48);
-       
-    }
+main.principal{
+    height: 100vh; /*(se der erro volte para 100vh)*/
+    width: 100vw;
+    position: relative;
+}
 
-    main.principal{
-        height: 100vh;
-        width: 100vw;
-        position: relative;
-    }
+section.box{
+    background-color: #fff;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.438);
+    position: absolute;
+    width: 80%; /*A versão para computador e grandes telas irão ter outra configuraçõa de largura*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 5px;
+}
 
-    main.box{
-        background-color: #fff;
-        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.438);
-        position: absolute;
-        width: 80%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 15px;
-        border-radius: 5px;
-    }
+fieldset{
+    padding: 10px;
+    border: 1px solid rgb(44, 11, 72);
+    border-radius: 5px;
+}
 
-    fieldset{
-        padding: 10px;
-        border: 1px solid rgb(44, 11, 72);
-        border-radius: 5px;
-    }
-
-    h1{
-        font-size: 20px;
-        text-align: center;
-        color: rgb(44, 11, 72);
-        text-shadow: 1px 1px 1px rgba(43, 11, 72, 0.407);
-        padding: 10px 0px 5px 0px;
-    }
-
-    p{
-        color: rgb(68, 40, 94);
-        text-shadow: 1px 1px 2px rgba(68, 40, 94, 0.356);
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    p#subtitulo{
-        text-align: center;
-        padding: 0px 0px 25px 0px;
-    }
-
-    div.User{
-        position: relative;
-        margin-bottom: 20px;
-    }
-
-    input.InputUser{
-        width: 100%;
-        background: none;
-        border: none;
-        border-bottom: 1px solid rgb(44, 11, 72);;
-        outline: none;
-    }
-
-    label.dados_usuario{
-        position: absolute;
-        font-size: 15px;
-        top:  0px;
-        left: 0px;
-        pointer-events: none;
-        transition: .5s;
-        color: rgb(68, 40, 94);
-    }
-
-    /* Essa parte do código faz a animação de deslocamento da Label*/
-    .InputUser:focus ~ label.dados_usuario,
-    .InputUser:valid ~ label.dados_usuario /*essa linha de código   após a virgula, faz com que, após ser digitado o texto dentro     do input, ao sair do input a label não "entra" em cima do texto     que foi digitado, só vai voltar se o input estiver vazio*/{
-    top: -20px;
-    font-size: 10px;
+h1{
+    font-size: 20px;
+    text-align: center;
     color: rgb(44, 11, 72);
-    font-weight: bold; 
-    }
+    text-shadow: 1px 1px 1px rgba(43, 11, 72, 0.407);
+    padding: 10px 0px 5px 0px;
+}
 
-    div.radio{
-        margin-bottom: 10px;
-    }
+p{
+    color: rgb(68, 40, 94);
+    text-shadow: 1px 1px 2px rgba(68, 40, 94, 0.356);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-    div.radio_opcoes{
-        line-height: 25px;
-        color: rgb(68, 40, 94);
-    }
+p#subtitulo{
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
 
-    select{
-        padding: 5px;
-        margin-bottom: 10px;
-        border: 1px solid rgb(44, 11, 72);
-        outline: none;
-        border-radius: 3px;
-        color: rgb(68, 40, 94);
-    }
+div.User{
+    position: relative;
+    margin-bottom: 20px;
+}
 
+input.InputUser{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgb(44, 11, 72);;
+    outline: none;
+}
+
+label.dados_usuario{
+    position: absolute;
+    font-size: 15px;
+    top:  0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: rgb(68, 40, 94);
+}
+
+/* Essa parte do código faz a animação de deslocamento da Label*/
+.InputUser:focus ~ label.dados_usuario,
+.InputUser:valid ~ label.dados_usuario /*essa linha de código   após a virgula, faz com que, após ser digitado o texto dentro     do input, ao sair do input a label não "entra" em cima do texto     que foi digitado, só vai voltar se o input estiver vazio*/{
+top: -20px;
+font-size: 10px;
+color: rgb(44, 11, 72);
+font-weight: bold; 
+}
+
+div.radio{
+    margin-bottom: 10px;
+}
+
+div.radio_opcoes{
+    line-height: 25px;
+    color: rgb(68, 40, 94);
+}
+
+select{
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(44, 11, 72);
+    outline: none;
+    border-radius: 3px;
+    color: rgb(68, 40, 94);
+}
+
+/*.tecnologias{
+    margin-bottom: 10px;
+    padding: 0px 10px 0px 0px;
+    color: rgb(68, 40, 94);
+    
+}
+
+div > ul{
+    list-style-type: none;
+    columns: 2;
+    text-align: justify;
+    width: 60%;
+    margin-left: 25%;
+    margin-right: 25%;
+}*/
+
+div.botao{
+    text-align: center;
+}
+
+input.botao{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(44, 11, 72);
+    color: #fff;
+}
+
+input.botao:hover{
+    background-color: rgb(68, 40, 94);
+    cursor: pointer;
+}
+
+
+/*Versão para Celular (Mobile First): */
+@media screen and (max-width: 768px) {
     .tecnologias{
         margin-bottom: 10px;
         padding: 0px 10px 0px 0px;
         color: rgb(68, 40, 94);
         
     }
-
-    /*label.tecnologias, input.tecnologias{
-        columns: 2;
-    }*/
-
+    
     div > ul{
         list-style-type: none;
         columns: 2;
@@ -140,41 +173,29 @@ Grandes telas: acima de 1200px
         margin-left: 25%;
         margin-right: 25%;
     }
-
-   /* li{
-        text-align: center;
-    }*/
+}
 
 
 
 
+/*Versão para Tablet*/
 
+@media screen and (min-width: 769px) and (max-width: 992px){
 
+    p#tecnologia{
+        text-align: left;
+    }
 
-
-
-
-
-
-
-    div.botao{
+    .tecnologias{
+        margin-bottom: 10px;
+        padding: 0px 10px 0px 0px;
+        color: rgb(68, 40, 94);
         text-align: center;
     }
-    
-    input.botao{
-        width: 50%;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        outline: none;
-        border: none;
-        background-color: rgb(44, 11, 72);
-        
-        color: #fff;
-    }
-    
-    input.botao:hover{
-        background-color: rgb(68, 40, 94);
-        cursor: pointer;
+
+    div > ul > li{
+        list-style-type: circle;
+        display: inline-block;
+        text-align: justify;
     }
 }
