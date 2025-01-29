@@ -25,11 +25,11 @@ body{
    
 }
 
-/*main.principal{
-    height: 100vh; /*(se der erro volte para 100vh)
+main.principal{
+    height: 100vh; /*(se der erro volte para 100vh)*/
     width: 100vw;
     position: relative;
-}*/
+}
 
 section.box{
     background-color: #fff;
@@ -181,16 +181,6 @@ input.botao:hover{
 /*Versão para Tablet*/
 
 @media screen and (min-width: 769px) and (max-width: 992px){
-
-    body{
-        height: 97vh;
-        background-color: aqua;
-    }
-    main.principal{
-        height: 100vh; /*(se der erro volte para 100vh)*/
-        width: 100vw;
-        position: relative;
-    }
 
     p#tecnologia{
         text-align: left;
