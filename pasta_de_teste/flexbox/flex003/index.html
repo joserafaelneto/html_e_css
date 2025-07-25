@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox003</title>
+    <style>
+        div.container{
+            background-color: aqua;
+            display: flex;
+
+
+            /*
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+
+            Essas duas configurações acima, podem ser substituídas pela seguinte cofiguração abaixo, segue o exemplo:
+            
+            flex-flow: row wrap;
+
+            */
+
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplo de Caixa A</div>
+        <div class="item">Exemplo de Caixa B</div>
+        <div class="item">Exemplo de Caixa C</div>
+        <div class="item">Exemplo de Caixa D</div>
+        <div class="item">Exemplo de Caixa E</div>
+        <div class="item">Exemplo de Caixa F</div>
+        <div class="item">Exemplo de Caixa G</div>
+    </div>
+</body>
+</html>
