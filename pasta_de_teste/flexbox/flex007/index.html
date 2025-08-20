@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox007</title>
+    <style>
+        div.container{
+            background-color: aqua;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid rgb(60, 42, 42);
+            padding: 30px;
+            text-align: center;
+        }
+
+        div#itema{
+            order: 1;
+        }
+
+        div#itemb{
+            order: 3;
+        }
+
+        div#itemc{
+            order: -1;
+        }
+
+        div#itemd{
+            order: -2;
+        }
+
+        div#iteme{
+            order: 0;
+        }
+
+        div#itemf{
+            order: 4;
+        }
+
+        div#itemg{
+            order: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="itema">A</div>
+        <div class="item" id="itemb">B</div>
+        <div class="item" id="itemc">C</div>
+        <div class="item" id="itemd">D</div>
+        <div class="item" id="iteme">E</div>
+        <div class="item" id="itemf">F</div>
+        <div class="item" id="itemg">G</div>
+    </div>
+</body>
+</html>
