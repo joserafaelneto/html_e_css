@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow e Shrink</title>
+    <style>
+        div.container{
+            background-color: lightblue;
+            display: flex;
+            /*
+            flex-direction: row;
+            flex-wrap: nowrap;
+            */
+            flex-flow: row nowrap;
+            
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+            /*flex-grow: 0; /* Por padrão o Grow é 0, ou seja, proibido crescer! */ 
+            /*flex-shrink: 1; /* Por padrão o Shrink é 1, ou seja, pode diminuir! */
+        }
+
+        div#item_A{
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        div#item_B{
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+        div#item_C{
+            flex-grow: 0;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item_A">A</div>
+        <div class="item" id="item_B">B</div>
+        <div class="item" id="item_C">C</div>
+        
+    </div>
+</body>
+</html>
